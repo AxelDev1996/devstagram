@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class RegisterController extends Controller
@@ -25,5 +26,13 @@ class RegisterController extends Controller
         ]);
 
         dd('creando usuario..');
+        User::create([
+            'name' => $request->name,
+            'username' => $request->username,
+            'email' => $request->email,
+            'password' => $request->password
+        ]);
+
+
     }
 }
