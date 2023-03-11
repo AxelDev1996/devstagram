@@ -71,7 +71,13 @@
                 </div>
                 <div class="mb-5">
                     <label for="password_confirmation" class="mb-2 block uppercase text-gray-500 font-bold">Repetir Password</label>
-                    <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Repeti tu Password" class="border p-3 w-full rounded-lg">
+                    <input
+                        id="password_confirmation"
+                        name="password_confirmation"
+                        type="password"
+                        placeholder="Repeti tu Password"
+                        class="border p-3 w-full rounded-lg"
+                    />
                 </div>
 
                 <input
