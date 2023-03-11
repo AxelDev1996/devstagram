@@ -6,6 +6,9 @@
 
         <title>DevStagram - @yield('titulo')</title>
         @vite('resources/css/app.css')
+
+        @stack('dropzone-styles')
+
     </head>
     <body class="antialiased bg-gray-100">
         <header class="p-5 border-b bg-white shadow">
