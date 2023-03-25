@@ -28,6 +28,7 @@ class Post extends Model{
         return $this->hasMany(Like::class);
     }
 
+    //Chequea si esta instancia contiene una relacion de like mediante un usuario pasado como parametro.
     public function checkLike(User $user){
         return $this->likes->contains('user_id', $user->id);
     }
